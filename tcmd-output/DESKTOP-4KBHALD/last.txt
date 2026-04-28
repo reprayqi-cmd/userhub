@@ -1,56 +1,19 @@
 ===== Local RunB64 Result =====
-Time UTC: 2026-04-28 08:48:01 UTC
-Run ID: 20260428-084759
+Time UTC: 2026-04-28 09:00:54 UTC
+Run ID: 20260428-090053
 Computer: DESKTOP-4KBHALD
 User: 769283854
 Whoami: desktop-4kbhald\769283854
 PWD: C:\program files (x86)\KAiAssistant\webx
 
 ===== Encoded Parameter =====
-aG9zdG5hbWU7IHdob2FtaTsgaXBjb25maWc7IEdldC1QU0RyaXZl
+ZWNobyBGaW5hbC1GaXhlZC0wNDAwNTI=
 
 ===== Decoded Command =====
-hostname; whoami; ipconfig; Get-PSDrive
+echo Final-Fixed-040052
 
 ===== Output =====
-DESKTOP-4KBHALD
-desktop-4kbhald\769283854
-
-Windows IP 配置
-
-
-以太网适配器 以太网 2:
-
-   连接特定的 DNS 后缀 . . . . . . . : 
-   IPv4 地址 . . . . . . . . . . . . : 192.168.1.3
-   子网掩码  . . . . . . . . . . . . : 255.255.255.0
-   默认网关. . . . . . . . . . . . . : 192.168.1.1
-
-未知适配器 本地连接:
-
-   媒体状态  . . . . . . . . . . . . : 媒体已断开连接
-   连接特定的 DNS 后缀 . . . . . . . : 
-
-未知适配器 VPN - VPN Client:
-
-   媒体状态  . . . . . . . . . . . . : 媒体已断开连接
-   连接特定的 DNS 后缀 . . . . . . . : 
-
-Name           Used (GB)     Free (GB) Provider      Root                                               CurrentLocation
-----           ---------     --------- --------      ----                                               ---------------
-Alias                                  Alias                                                                           
-C                 197.19         34.32 FileSystem    C:\                                 ...les (x86)\KAiAssistant\webx
-Cert                                   Certificate   \                                                                 
-D                1760.64        102.36 FileSystem    D:\                                                               
-E                 357.68        108.06 FileSystem    E:\                                                               
-Env                                    Environment                                                                     
-Function                               Function                                                                        
-HKCU                                   Registry      HKEY_CURRENT_USER                                                 
-HKLM                                   Registry      HKEY_LOCAL_MACHINE                                                
-Variable                               Variable                                                                        
-WSMan                                  WSMan                                                                           
-
-
+Final-Fixed-040052
 
 
 ===== Exit Code =====
