@@ -1,0 +1,20 @@
+===== Local RunB64 Result =====
+Time UTC: 2026-04-28 09:00:54 UTC
+Run ID: 20260428-090053
+Computer: DESKTOP-4KBHALD
+User: 769283854
+Whoami: desktop-4kbhald\769283854
+PWD: C:\program files (x86)\KAiAssistant\webx
+
+===== Encoded Parameter =====
+ZWNobyBGaW5hbC1GaXhlZC0wNDAwNTI=
+
+===== Decoded Command =====
+echo Final-Fixed-040052
+
+===== Output =====
+Final-Fixed-040052
+
+
+===== Exit Code =====
+0
