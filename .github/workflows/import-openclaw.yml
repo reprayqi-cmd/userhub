@@ -1,0 +1,42 @@
+name: Import OpenClaw upstream
+
+on:
+  workflow_dispatch:
+    inputs:
+      ref:
+        description: "OpenClaw ref/branch/tag to import"
+        required: true
+        default: "main"
+      target_dir:
+        description: "Directory to import into"
+        required: true
+        default: "upstream-openclaw"
+
+permissions:
+  contents: write
+
+jobs:
+  import-openclaw:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout this repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Remove previous import
+        run: |
+          rm -rf "${{ github.event.inputs.target_dir }}"
+
+      - name: Clone OpenClaw upstream
+        run: |
+          git clone --depth 1 --branch "${{ github.event.inputs.ref }}" https://github.com/openclaw/openclaw.git "${{ github.event.inputs.target_dir }}"
+          rm -rf "${{ github.event.inputs.target_dir }}/.git"
+
+      - name: Commit imported source
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "${{ github.event.inputs.target_dir }}"
+          git commit -m "Import openclaw upstream into ${{ github.event.inputs.target_dir }}" || echo "No changes to commit"
+          git push
